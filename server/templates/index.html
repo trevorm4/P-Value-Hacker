@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>p-hacker</title>
+        {% load static %}  
+        <link rel="stylesheet" type="text/css" href="{% static 'p.css' %}">
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400&display=swap" rel="stylesheet">  
+    </head>
+    <body>
+        <h1>p-hacker</h1>
+        <p>
+            The p-test is widely regarded as a bastion of scientific achievement, and everyone knows that getting the p-value you want means that you conducted groundbreaking and accurate research. But, maybe that publication is due in a few days, and you find that your data isn’t really resulting in a low p-value, so that’s why we’re launching p-hacker: a tool that helps you get the results you want, faster.
+        </p>
+
+        <p>If you’re affiliated with graduate school admissions, please reach out and consider letting us in. We think p-hacker has the potential to significantly improve your institution’s research throughput. </p>
+        
+        <form method="POST" id="ree">
+            {% csrf_token %}
+            What p-value do you want? We're using a left/right-sided test.<br>
+            <input type="text" name="p"><br>
+            What null hypothesis do you have?<br>
+            <input type="text" name="h"><br>
+            Paste your data into the form below and hope it's small enough that we can handle it. Also, please use one row of integers or floats separated by commas. Thanks.<br>
+            <textarea name="data" form="ree"></textarea><br>
+            <input type="submit" value="Hand over your precious research data we will use for nefarious reasons">
+        </form>
+    </body>
+</html> 

@@ -1,0 +1,31 @@
+body
+{
+    background-image: linear-gradient(to right, #00004d ,#0000b3, #0000e6);
+    color: white;
+    font-family: 'Jost', sans-serif;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+input[type="submit"] {
+    -webkit-appearance: none;
+    padding: 1%;
+    color:white;
+    background-color: #80ff80;
+    border: none;
+    border-radius: 10px;
+    font-size: larger;
+    margin-top: 1%;
+}
+
+input[type="text"] {
+    border: none;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+input[type="textarea"]{
+    border: none;
+    border-radius: 10px;
+    padding: 2px;
+}
