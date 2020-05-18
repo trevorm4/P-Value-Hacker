@@ -35,8 +35,7 @@ def refine(df,column,h_null,threshold,left=True):
             
         
 if __name__ == "__main__":
-    df = pd.DataFrame({"a":[32.5,34.5,37.3,35.6,36.5,37,40,32]})
+    df = pd.DataFrame({"a":[32.5,34.5,37.3,35.6,36.5]})
     
     new = refine(df,"a",34.5,.05,False)
-    print("New df:", new)
     print(get_t_stat(new,"a",34.5))
